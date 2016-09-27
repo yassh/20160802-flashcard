@@ -1,0 +1,8 @@
+.Screen {
+  width: 100vw;
+  min-height: 100vh;
+
+  &:not(.is-shown) {
+    display: none;
+  }
+}

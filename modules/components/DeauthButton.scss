@@ -1,0 +1,13 @@
+.DeauthButton {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 0.5em;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 20px;
+
+  &::before {
+    @include ionicons("\f29f");
+  }
+}

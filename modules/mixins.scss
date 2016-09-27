@@ -1,0 +1,44 @@
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  color: inherit;
+  border: 0;
+  background: none;
+  font: inherit;
+
+  appearance: none; // iOSで、input要素に影がつく問題を解消する
+}
+
+@mixin clearfix {
+  &::after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-vertical-center {
+  display: flex;
+
+  align-items: center;
+}
+
+@mixin ionicons($char) {
+  content: $char;
+  font-family: Ionicons;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin outline($color: red) {
+  outline: solid 1px $color;
+}

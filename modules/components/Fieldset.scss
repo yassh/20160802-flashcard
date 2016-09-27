@@ -1,0 +1,11 @@
+.Fieldset {
+  & + & {
+    margin-top: 1em;
+  }
+}
+
+.Fieldset-legend {
+  + .Fieldset-controls {
+    margin-top: 0.25em;
+  }
+}

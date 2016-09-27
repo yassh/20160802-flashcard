@@ -1,0 +1,9 @@
+.CardNewScreen {
+  @include flex-center;
+
+  padding: 10vh 10vw;
+}
+
+.CardNewScreen-form {
+  flex-grow: 1;
+}

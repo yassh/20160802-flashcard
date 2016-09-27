@@ -1,0 +1,60 @@
+.Card,
+.Card-front,
+.Card-back {
+  border-radius: 20vmin;
+}
+
+.Card {
+  position: relative;
+  cursor: pointer;
+  text-align: justify;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  font-size: 5vmin;
+
+  transform-style: preserve-3d;
+
+  &.is-animatable {
+    transition: transform 0.25s;
+  }
+
+  &.is-backShown {
+    transform: rotateY(180deg);
+  }
+}
+
+.Card-front,
+.Card-back {
+  @include flex-center;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  padding: 2em;
+  white-space: pre-line;
+  color: transparent;
+  line-height: 1.4;
+
+  backface-visibility: hidden;
+}
+
+.Card-front {
+  background-color: rgb(255, 255, 255);
+  background-image: url(https://raw.githubusercontent.com/yassh/a/master/subtlepatterns.com/geometry2/geometry2.png);
+
+  .Card.is-ready & {
+    color: rgba(20%, 0, 0, 0.8);
+  }
+}
+
+.Card-back {
+  transform: rotateY(180deg);
+  background-color: rgb(255, 255, 255);
+  background-image: url(https://raw.githubusercontent.com/yassh/a/master/subtlepatterns.com/restaurant_icons/restaurant_icons.png);
+
+  .Card.is-ready & {
+    color: rgba(0, 0, 20%, 0.8);
+  }
+}

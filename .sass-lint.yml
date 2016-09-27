@@ -1,0 +1,151 @@
+# https://github.com/sasstools/sass-lint#options
+options:
+  formatter: stylish
+  merge-default-rules: false
+
+# https://github.com/sasstools/sass-lint#files
+files:
+  include: '**/*.scss'
+
+# https://github.com/sasstools/sass-lint#rules
+rules:
+  # https://github.com/sasstools/sass-lint/blob/master/docs/rules/border-zero.md
+  border-zero:
+    - 2
+    -
+      convention: '0'
+
+  # https://github.com/sasstools/sass-lint/blob/master/docs/rules/brace-style.md
+  brace-style:
+    - 2
+    -
+      style: '1tbs'
+
+  # https://github.com/sasstools/sass-lint/blob/master/docs/rules/empty-args.md
+  empty-args:
+    - 2
+    -
+      include: false
+
+  # https://github.com/sasstools/sass-lint/blob/develop/docs/rules/final-newline.md
+  final-newline:
+    - 2
+    -
+      include: true
+
+  # https://github.com/sasstools/sass-lint/blob/develop/docs/rules/hex-length.md
+  hex-length:
+    - 2
+    -
+      style: long
+
+  # https://github.com/sasstools/sass-lint/blob/develop/docs/rules/hex-notation.md
+  hex-notation:
+    - 2
+    -
+      style: lowercase
+
+  # https://github.com/sasstools/sass-lint/blob/develop/docs/rules/indentation.md
+  indentation:
+    - 2
+    -
+      size: 2
+
+  # https://github.com/sasstools/sass-lint/blob/develop/docs/rules/leading-zero.md
+  leading-zero:
+    - 2
+    -
+      include: true
+
+  # https://github.com/sasstools/sass-lint/blob/develop/docs/rules/no-color-keywords.md
+  no-color-keywords: 1
+
+  # https://github.com/sasstools/sass-lint/blob/master/docs/rules/no-duplicate-properties.md
+  no-duplicate-properties: 2
+
+  # https://github.com/sasstools/sass-lint/blob/develop/docs/rules/no-ids.md
+  no-ids: 1
+
+  # https://github.com/sasstools/sass-lint/blob/master/docs/rules/no-invalid-hex.md
+  no-invalid-hex: 2
+
+  # https://github.com/sasstools/sass-lint/blob/master/docs/rules/no-mergeable-selectors.md
+  no-mergeable-selectors: 2
+
+  # https://github.com/sasstools/sass-lint/blob/develop/docs/rules/no-misspelled-properties.md
+  no-misspelled-properties:
+    - 2
+    -
+      extra-properties:
+        - overflow-scrolling
+
+  # https://github.com/sasstools/sass-lint/blob/develop/docs/rules/no-vendor-prefixes.md
+  no-vendor-prefixes:
+    - 1
+    -
+      ignore-non-standard: true
+
+  # https://github.com/sasstools/sass-lint/blob/master/docs/rules/no-qualifying-elements.md
+  no-qualifying-elements:
+    - 2
+    -
+      allow-element-with-attribute: false
+      allow-element-with-class: false
+      allow-element-with-id: false
+
+  # https://github.com/sasstools/sass-lint/blob/develop/docs/rules/no-trailing-whitespace.md
+  no-trailing-whitespace: 2
+
+  # https://github.com/sasstools/sass-lint/blob/develop/docs/rules/pseudo-element.md
+  pseudo-element: 2
+
+  # https://github.com/sasstools/sass-lint/blob/develop/docs/rules/quotes.md
+  quotes:
+    - 2
+    -
+      style: double
+
+  # https://github.com/sasstools/sass-lint/blob/master/docs/rules/single-line-per-selector.md
+  single-line-per-selector: 2
+
+  # https://github.com/sasstools/sass-lint/blob/master/docs/rules/space-after-colon.md
+  space-after-colon:
+    - 2
+    -
+      include: true
+
+  # https://github.com/sasstools/sass-lint/blob/master/docs/rules/space-after-comma.md
+  space-after-comma:
+    - 2
+    -
+      include: true
+
+  # https://github.com/sasstools/sass-lint/blob/master/docs/rules/space-before-brace.md
+  space-before-brace:
+    - 2
+    -
+      include: true
+
+  # https://github.com/sasstools/sass-lint/blob/master/docs/rules/space-before-colon.md
+  space-before-colon:
+    - 2
+    -
+      include: false
+
+  # https://github.com/sasstools/sass-lint/blob/master/docs/rules/space-between-parens.md
+  space-between-parens:
+    - 2
+    -
+      include: false
+
+  # https://github.com/sasstools/sass-lint/blob/develop/docs/rules/trailing-semicolon.md
+  trailing-semicolon:
+    - 2
+    -
+      include: true
+
+  # https://github.com/sasstools/sass-lint/blob/develop/docs/rules/zero-unit.md
+  zero-unit:
+    - 2
+    -
+      include: false

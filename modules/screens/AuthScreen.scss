@@ -1,0 +1,9 @@
+.AuthScreen {
+  @include flex-center;
+
+  padding: 10vh 10vw;
+}
+
+.AuthScreen-form {
+  flex-grow: 1;
+}
