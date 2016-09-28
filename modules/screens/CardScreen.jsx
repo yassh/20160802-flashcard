@@ -66,7 +66,7 @@ class CardScreen extends React.Component {
     const { currentCard } = this.props;
 
     if (confirm('このカードを削除しますか？')) {
-      dispatch(removeCard(currentCard.id)).then((err) => {
+      dispatch(removeCard(currentCard.id)).then(() => {
         alert('カードを削除しました。');
         this.setState(initialState);
       }).catch((err) => {

@@ -24,7 +24,7 @@ function request(method, path, data) {
     }
 
     const options = {
-      method: method,
+      method,
       url: apiUrl + path,
     };
 

@@ -35,7 +35,8 @@ export function nextCard() {
 export function fetchCards() {
   return (dispatch) => {
     return getCards().then((cards) => {
-      cards = arrayShuffle(cards).filter((card) => card.id);
+      cards = arrayShuffle(card.filter((card) => card.id));
+      dispatch({ type: 'FETCH_CARDS', cards });
       dispatch({ type: 'FETCH_CARDS', cards });
     });
   };
@@ -46,9 +47,7 @@ export function addCard(data) {
     const card = data;
     card.id = uniqid();
 
-    return postCard(card).then(() => {
-      dispatch({ type: 'ADD_CARD', card });
-    });
+    return postCard(card).then(() => dispatch({ type: 'ADD_CARD', card }));
   };
 }
 

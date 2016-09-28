@@ -13,14 +13,15 @@ function cards(state = [], action) {
   }
 }
 
-function currentCard(state = null, action) {
+const initialCurrentCard = { id: "", front: "", back: "" };
+function currentCard(state = initialCurrentCard, action) {
+  if (!action.type.startsWith('currentCard:')) return state;
+
   switch (action.type) {
-    case 'FETCH_CARDS':
+    case 'currentCard:FETCH_CARDS':
       return action.cards[0] ? action.cards[0] : state;
-    case 'CHANGE_CARD':
+    case 'currentCard:CHANGE_CARD':
       return action.card;
-    default:
-      return state;
   }
 }
 
