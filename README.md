@@ -1,5 +1,7 @@
 # 暗記カード
 
+<https://yassh.github.io/20160802-flashcard/>
+
 ## ローカルでの起動方法
 
 0. `npm install`
@@ -17,7 +19,7 @@
 
 2つ目の方法では、カードの追加や削除はできない。
 
-0. 次の例のようなデータ構造のJSONファイルを作成し、ウェブリソースとして取得可能にする。そのウェブリソースのレスポンスヘッダは、`Access-Control-Allow-Origin: *`を含まなければならない。（GitHubで公開するのが簡単だろう。）
+0. 次の例のようなデータ構造のJSONファイルを作成し、ウェブリソースとして取得可能にする。そのウェブリソースのレスポンスヘッダは、`Access-Control-Allow-Origin: *`を含まなければならない。（GitHubで公開するのが簡単だろう。[サンプル](https://yassh.github.io/20160802-flashcard/static/test.json)）
 0. 暗記カードを起動し、JSONファイルのURLを入力して、接続する。
 
 ### JSONの例
