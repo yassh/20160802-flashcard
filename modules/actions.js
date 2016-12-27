@@ -35,7 +35,7 @@ export function nextCard() {
 export function fetchCards() {
   return (dispatch) => {
     return getCards().then((cards) => {
-      cards = arrayShuffle(card.filter((card) => card.id));
+      cards = arrayShuffle(cards.filter((card) => card.id));
       dispatch({ type: 'FETCH_CARDS', cards });
     });
   };
